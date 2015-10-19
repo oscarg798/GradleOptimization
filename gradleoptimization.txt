@@ -1,0 +1,7 @@
+ //Add this option in your build.gradle
+ dexOptions{
+        javaMaxHeapSize "4g"
+    }
+
+ // and in dependencies change   compile to provided for fileTree option
+ provided fileTree(include: ['*.jar'], dir: 'libs')
